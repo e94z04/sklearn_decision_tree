@@ -7,7 +7,7 @@ import xlsxwriter
 from category_encoders import OrdinalEncoder
 
 #讀取原始資料
-original_dataset = np.loadtxt('./sklearn_decision_tree-master/car.data', dtype = 'str', delimiter  = ',')
+original_dataset = np.loadtxt('./Desktop/sklearn_decision_tree-master/car.data', dtype = 'str', delimiter  = ',')
 
 #指定屬性
 feature_attributes = original_dataset[:, 0:6]
@@ -44,12 +44,12 @@ dot_data = tree.export_graphviz(decision_tree, feature_names = feature_name, cla
 graph = pydotplus.graph_from_dot_data(dot_data)
 
 try:
-    graph.write_pdf('./sklearn_decision_tree-master/decision_tree.pdf')
+    graph.write_pdf('./Desktop/sklearn_decision_tree-master/decision_tree.pdf')
 except:
     print('無法繪製新的決策樹\n請先關閉已經開啟的檔案\n並重新執行程式')
 
 #新增excel檔案
-workbook = xlsxwriter.Workbook('./sklearn_decision_tree-master/predict.xlsx')
+workbook = xlsxwriter.Workbook('./Desktop/sklearn_decision_tree-master/predict.xlsx')
 
 worksheet1 = workbook.add_worksheet('Car Evaluation')
 
