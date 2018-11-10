@@ -22,10 +22,10 @@
 ## 流程講解 ##  
 ### 1. 尋找並下載資料集 ###  
 尋找目標資料集並進入其文件夾  
-
+![進入目標資料集的文件夾](./images/find_the_folder.jpg)  
    
 下載資料集  
-
+![下載資料集](./images/download_data.jpg)  
    
 如果想要找其他的資料集可以參考 [UCI Machine Learning Repository: Data Sets](https://archive.ics.uci.edu/ml/datasets.html)  
    
@@ -124,7 +124,7 @@ print('訓練的正確率: ' + str(accuracy_of_training_data))
 
 prediction_of_test_data = decision_tree.predict(feature_attributes_of_test_data)
 accuracy_of_test_data = metrics.accuracy_score(class_attribute_of_test_data, prediction_of_test_data)
-print('預測的正確率: ' + str(accuracy_of_test_data))
+print('測試的正確率: ' + str(accuracy_of_test_data))
 ```
   
 ### 7. 繪製決策樹 ###  
