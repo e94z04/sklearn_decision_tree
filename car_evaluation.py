@@ -29,11 +29,11 @@ decision_tree = decision_tree_classifier.fit(feature_attributes_of_training_data
 
 prediction_of_training_data = decision_tree.predict(feature_attributes_of_training_data)
 accuracy_of_training_data = metrics.accuracy_score(class_attribute_of_training_data, prediction_of_training_data)
-print(accuracy_of_training_data)
+print('訓練的正確率: ' + str(accuracy_of_training_data))
 
 prediction_of_test_data = decision_tree.predict(feature_attributes_of_test_data)
 accuracy_of_test_data = metrics.accuracy_score(class_attribute_of_test_data, prediction_of_test_data)
-print(accuracy_of_test_data)
+print('測試的正確率: ' + str(accuracy_of_test_data))
 
 #繪製決策樹
 feature_name = np.array([['buying'], ['maint'], ['doors'], ['persons'], ['lug_boot'], ['safety']])
