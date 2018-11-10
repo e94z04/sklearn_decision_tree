@@ -22,10 +22,10 @@
 ## 流程講解 ##  
 ### 1. 尋找並下載資料集 ###  
 尋找目標資料集並進入其文件夾  
-![進入目標資料集的文件夾](./images/find_the_folder.jpg)  
+
    
 下載資料集  
-![下載資料集](./images/download_data.jpg)  
+
    
 如果想要找其他的資料集可以參考 [UCI Machine Learning Repository: Data Sets](https://archive.ics.uci.edu/ml/datasets.html)  
    
