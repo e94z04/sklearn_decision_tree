@@ -1,9 +1,6 @@
 from sklearn import *
-from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 import numpy as np
-import pydotplus
-import xlsxwriter
 from category_encoders import OrdinalEncoder
 from matplotlib import pyplot as plt
 from sklearn.model_selection import cross_val_score
@@ -41,7 +38,7 @@ def draw_image(accuracy_of_gini, accuracy_of_entropy):
 if __name__ == '__main__':
 
     #讀取原始資料
-    original_dataset = np.loadtxt('./Desktop/sklearn_decision_tree/car.data', dtype = 'str', delimiter  = ',')
+    original_dataset = np.loadtxt('./Desktop/sklearn_decision_tree-master/car.data', dtype = 'str', delimiter  = ',')
 
     #隨機打散資料
     np.random.shuffle(original_dataset)
