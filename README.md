@@ -67,7 +67,7 @@ original_dataset = np.loadtxt('./Desktop/sklearn_decision_tree-master/car.data',
    - med (中)
    - high (高)
   
-最後一個欄位是類別是類別  
+最後一個欄位是類別  
 - class (評價)
    - unacc (不被接受的)
    - acc (可接受的)
@@ -193,7 +193,10 @@ except:
    兩種算法的講解可以參考[Decision tree learning](https://en.wikipedia.org/wiki/Decision_tree_learning#Gini_impurity)  
   
 ## 結論 ##  
-依照上一個項目所說明的方向去尋找更好的決策樹  
+依照前面所說明的方向去尋找更好的決策樹  
 輸出的圖片如下  
-
-
+![比較圖](./images/compare_tree.png)  
+最後的結論是兩種算法並沒有相差太多  
+不過可以發現到  
+當決策樹的深度到達10後  
+即便繼續增加深度也無法讓正確率繼續提升
